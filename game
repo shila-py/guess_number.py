@@ -1,0 +1,17 @@
+answer =int( input("player 1 : please insert a number (1-100):"))
+
+is_correct= False
+i=0
+while i < 10 and is_correct == False:
+    guess =int( input ("player 2: please guess one number (1-100)"))
+    if guess == answer :
+        print("player2 : you won!!!")
+        is_correct = True
+    elif guess > answer :
+        print("your guess is greater than answer")
+        i= i+1
+    else :
+        print("your guess is smaller than answer")
+        i=i+1
+if is_correct == False:        
+  print("player 2 : you lost!!! ")       
